@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="geb-cucumber-groovy" />
+        <module name="java-cucumber-junit" />
       </profile>
     </annotationProcessing>
   </component>
