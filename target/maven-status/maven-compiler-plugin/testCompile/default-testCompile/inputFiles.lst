@@ -1,12 +1,13 @@
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\RunCucumberTest.java
-C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\stepdefs\MyStepdefs.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\enums\DriverType.java
+C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\stepdefs\GoogleSteps.java
+C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\ChromeDriverManager.java
+C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\OsCheck.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\ConfigFileReader.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\Driver.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\DriverManagerFactory.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\pages\GoogleHomePage.java
-C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\stepdefs\GoogleSteps.java
+C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\pages\BasePage.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\enums\EDrivers.java
+C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\stepdefs\Hooks.java
 C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\DriverManager.java
-C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\ChromeDriverManager.java
-C:\Users\WAES-029\IdeaProjects\java-cucumber-junit\src\test\java\utils\OsCheck.java

@@ -5,6 +5,7 @@ Feature: Search on google
     When I search for <search>
     Then I can see <result> in the results
     Examples:
-      | search | result |
-      | apple  | apple  |
-      | orange | sarasa |
+      | search   | result   |
+      | apple    | sarasa    |
+      | orange   | orange   |
+      | emiliano | emiliano |

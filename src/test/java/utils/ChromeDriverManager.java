@@ -41,6 +41,7 @@ public class ChromeDriverManager extends DriverManager {
         options.addArguments("test-type");
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(chService, capabilities);
+        driver.manage().window().maximize();
     }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="1" name="RunCucumberTest" time="28.563" errors="0" skipped="0">
+<testsuite tests="3" failures="1" name="RunCucumberTest" time="37.568" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.2+10"/>
@@ -63,37 +63,47 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Search on google" name="User performs a search on Google and the results are optimal" time="9.133"/>
-  <testcase classname="Search on google" name="User performs a search on Google and the results are optimal" time="8.103">
+  <testcase classname="Search on google" name="User performs a search on Google and the results are optimal" time="13.54">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at stepdefs.GoogleSteps.iCanSeeInTheResults(GoogleSteps.java:47)
+	at stepdefs.GoogleSteps.iCanSeeInTheResults(GoogleSteps.java:40)
 	at ✽.I can see sarasa in the results(file:src/test/resources/features/google_search.feature:6)
 </failure>
-    <system-out>
-  Scenario Outline: User performs a search on Google and the results are optimal &amp;#27;[90m# src/test/resources/features/google_search.feature:10&amp;#27;[0m
+    <system-out>Feature: Search on google
+
+  Scenario Outline: User performs a search on Google and the results are optimal &amp;#27;[90m# src/test/resources/features/google_search.feature:3&amp;#27;[0m
+    &amp;#27;[36mGiven I open google homepage&amp;#27;[0m
+    &amp;#27;[36mWhen I search for &lt;search&gt;&amp;#27;[0m
+    &amp;#27;[36mThen I can see &lt;result&gt; in the results&amp;#27;[0m
+
+    Examples: 
+
+  Scenario Outline: User performs a search on Google and the results are optimal &amp;#27;[90m# src/test/resources/features/google_search.feature:9&amp;#27;[0m
+Called openBrowser
     &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI open google homepage&amp;#27;[0m                                                 &amp;#27;[90m# GoogleSteps.iOpenGoogleHomepage()&amp;#27;[0m
-    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI search for &amp;#27;[0m&amp;#27;[32m&amp;#27;[1morange&amp;#27;[0m                                                     &amp;#27;[90m# GoogleSteps.iSearchFor(String)&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI search for &amp;#27;[0m&amp;#27;[32m&amp;#27;[1mapple&amp;#27;[0m                                                      &amp;#27;[90m# GoogleSteps.iSearchFor(String)&amp;#27;[0m
     &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mI can see &amp;#27;[0m&amp;#27;[31m&amp;#27;[1msarasa&amp;#27;[0m&amp;#27;[31m in the results&amp;#27;[0m                                         &amp;#27;[90m# GoogleSteps.iCanSeeInTheResults(String)&amp;#27;[0m
       &amp;#27;[31mjava.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertTrue(Assert.java:52)
-	at stepdefs.GoogleSteps.iCanSeeInTheResults(GoogleSteps.java:47)
+	at stepdefs.GoogleSteps.iCanSeeInTheResults(GoogleSteps.java:40)
 	at ?.I can see sarasa in the results(file:src/test/resources/features/google_search.feature:6)
 &amp;#27;[0m
+Current Page URL is https://www.google.com/search?source=hp&amp;ei=nitpXa2JEoTUwQLcr4rgCA&amp;q=apple&amp;oq=apple&amp;gs_l=psy-ab.3..0l10.227.248..322...0.0..0.46.164.4......0....1..gws-wiz.......0i131.OBPgA8PWOL0&amp;ved=0ahUKEwit0MCu4KrkAhUEalAKHdyXAowQ4dUDCAU&amp;uact=5
 </system-out>
-    <system-err>Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 26539
+    <system-err>Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 5343
 Only local connections are allowed.
-Aug 30, 2019 10:59:12 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Aug 30, 2019 3:58:45 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-[1567155555.281][WARNING]: Timed out connecting to Chrome, retrying...
-Aug 30, 2019 10:59:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1567173528.805][WARNING]: Timed out connecting to Chrome, retrying...
+Aug 30, 2019 3:58:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
+[1567173532.841][WARNING]: Timed out connecting to Chrome, retrying...
 </system-err>
   </testcase>
-  <testcase classname="Is it Friday yet?" name="Sunday isn&apos;t Friday" time="5.65"/>
-  <testcase classname="Is it Friday yet?" name="Friday is Friday" time="5.677"/>
+  <testcase classname="Search on google" name="User performs a search on Google and the results are optimal" time="12.047"/>
+  <testcase classname="Search on google" name="User performs a search on Google and the results are optimal" time="11.981"/>
 </testsuite>

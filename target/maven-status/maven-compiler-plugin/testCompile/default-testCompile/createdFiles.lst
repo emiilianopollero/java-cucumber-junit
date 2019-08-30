@@ -1,3 +1,4 @@
+pages\BasePage.class
 utils\Driver$1.class
 stepdefs\GoogleSteps.class
 RunCucumberTest.class
@@ -7,8 +8,8 @@ utils\ConfigFileReader.class
 utils\Driver.class
 utils\ConfigFileReader$1.class
 pages\GoogleHomePage.class
+stepdefs\Hooks.class
 enums\DriverType.class
-stepdefs\MyStepdefs.class
 utils\ChromeDriverManager.class
 utils\OsCheck.class
 utils\OsCheck$OSType.class

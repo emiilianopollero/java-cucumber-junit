@@ -9,12 +9,10 @@ public abstract class DriverManager {
     protected abstract void stopService();
     protected abstract void createDriver();
 
-    public void quitDriver() {
+    public void quitDriver(WebDriver driver) {
         if (null != driver) {
             driver.quit();
-            driver = null;
         }
-
     }
 
     public WebDriver getDriver() {
